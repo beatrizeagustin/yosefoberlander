@@ -339,13 +339,17 @@ ul {
     width: 80vw;
     margin: 20px auto;
     color: #FFF;
-    font-size: 48px;
+    font-size: 4em;
     position: relative;
 }
 
 .portfolio-skills li {
     margin: 20px;
     display: inline;
+}
+
+.skill-list {
+    text-align: center;
 }
 
 .hidden {
@@ -375,7 +379,7 @@ ul {
 }
 
 .services-info li {
-    width: 20vw ;
+    width: 20vw;
     display: inline-block;
     color: #fff;
     text-align: center;
@@ -385,6 +389,11 @@ ul {
 
 .service-icon {
     font-size: 48px;
+}
+
+.services-list {
+    text-align: center;
+    padding: 0;
 }
 
 .service-title {
@@ -449,6 +458,8 @@ textarea {
     width: 360px;
     height: 10em;
     background: #000;
+    border-color: #000;
     color: lime;
-    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
 } 
