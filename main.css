@@ -12,6 +12,16 @@ h1 {
     margin: 0;
 }
 
+h4 {
+    font-size: 24px;
+    color: #FFF;
+    margin: 0;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+}
+
 a {
     text-decoration: none;
     color: #000;
@@ -23,6 +33,16 @@ ul {
 
 .bold {
     font-weight: 800;
+}
+
+.green {
+    font-family: 'Roboto Mono', monospace;
+    color: lime
+}
+
+.animated {
+    width: 20em;
+    animation: type 1s steps(60, end);
 }
 
 #navbar {
@@ -45,7 +65,7 @@ ul {
     display: block;
     width: 80vw;
     height: 38px;
-    background: #FFF;
+    background: #888;
     opacity: 0.2;
     position: absolute;
     z-index: -1
@@ -68,6 +88,7 @@ ul {
 }
 
 #heading {
+    width: 100%;
     height: 60vh;
     background-image: url("/assets/notebook-1280538_1920.jpg");
     background-size: 100%;
@@ -79,7 +100,6 @@ ul {
     height: 60vh;
     width: 100%;
     position: absolute;
-    z-index: 
 }
 
 .heading-overlay:before {
@@ -93,7 +113,8 @@ ul {
 }
 
 .heading {
-    margin: 100px 100px 20px 100px;
+    width: 80vw;
+    margin: 100px auto 0;
     height: 10vh;
     color: lime;
     position: relative;
@@ -118,8 +139,9 @@ ul {
     font-family: 'Roboto Mono', monospace;
     font-size: 15px;
     color: lime;
-    width: 390px;
-    margin: 20px 100px;
+    width: 80vw;
+    padding: 0;
+    margin: 20px auto;
     position: relative;
 }
 
@@ -136,19 +158,19 @@ ul {
 }
 
 #heading .description:nth-child(2) {
-    animation: type4 8s steps(60, end);
+    animation: type4 7s steps(60, end);
 }
 
 #heading .description:nth-child(3) {
-    animation: type5 10.5s steps(60, end);
+    animation: type5 8.8s steps(60, end);
 }
 
 #heading .description:nth-child(4) {
-    animation: type6 12.5s steps(60, end);
+    animation: type6 10s steps(60, end);
 }
 
 #heading .description:nth-child(5) {
-    animation: type7 13.5s steps(60, end);
+    animation: type7 10.7s steps(60, end);
 }
 
 .cursor {
@@ -159,6 +181,7 @@ ul {
     background: lime;
     animation: blink 0.3s infinite
 }
+
 @keyframes type { 
   from { width: 0; } 
 } 
@@ -221,8 +244,8 @@ ul {
 
 
 .heading-buttons {
-    width: 390px;
-    margin: 0 100px;
+    width: 80vw;
+    margin: 0 auto;
 }
 
 .button {
@@ -242,15 +265,20 @@ ul {
 }
 
 #about {
-    height: 40vh;
+    width: 80vw;
+    height: auto;
     background: #FFF;
-    margin-bottom: 30px;
+    margin: 50px auto;
     z-index: 1;
     overflow: hidden
 }
 
 .about-description {
-    margin: 50px 100px;
+    height: auto;
+}
+
+.description {
+    height: auto;
 }
 
 .profile-image {
@@ -272,9 +300,99 @@ ul {
     color: #000;
 }
 
+#portfolio {
+    width: 100%;
+    height: 40vh;
+    background-image: url("/assets/code-2620118_1920.jpg");
+    background-size: 100%;
+    overflow: hidden; 
+    position: relative
+}
+
+.portfolio-overlay {
+    width: 100%;
+    height: 40vh;
+    position: absolute;
+}
+
+.portfolio-overlay:before {
+    content: "";
+    display: block;
+    background: #0C1939;
+    width: 100%;
+    height: 40vh;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.portfolio-skills span,
+.services-info h4 span {
+    height: 20px;
+    width: 10px;
+    margin: 0 5px;
+    position: relative;
+    top: 1px;
+}
+
+.portfolio-skills {
+    width: 80vw;
+    margin: 20px auto;
+    color: #FFF;
+    font-size: 48px;
+    position: relative;
+}
+
+.portfolio-skills li {
+    margin: 20px;
+    display: inline;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.slide {
+    animation: slidedown 2s ease;
+}
+
+@keyframes slidedown {
+    0% {opacity: 0; transform: translateY(-50px) }
+    100% {opacity: 1; transform: translateY(0)}
+}
+
+#services {
+    width: 100%;
+    height: auto;
+    background: #0C1939;
+}
+
+.services-info {
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;  
+    padding: 20px 0;
+}
+
+.services-info li {
+    width: 20vw ;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.service-icon {
+    font-size: 48px;
+}
+
+.service-title {
+    color: #CC00FF;
+    font-weight: bolder;
+}
+
 #social {
     height: 20vh;
-    position: relative;
     background-image: url("assets/technology-1283624_1920.jpg");
     background-size: 100%
 }
@@ -282,8 +400,7 @@ ul {
 .social-overlay {
     height: 20vh;
     width: 100%;
-    position: relative;
-   
+    position: absolute; 
 }
 
 .social-overlay:before {
@@ -292,6 +409,30 @@ ul {
     height: 20vh;
     width: 100%;
     background: #0C1939;
-    opacity: 0.7
+    opacity: 0.7;
+    position: absolute;
 }
+
+.social-links {
+    width: 80vw;
+    margin: 50px auto;
+}
+
+.social-links li a {
+    position: relative;
+    color: #FFF;
+}
+
+.social-links i {
+}
+
+.social-links li {
+    margin: 20px;
+    display: inline;
+}
+
+.social-links .button {
+    padding: 20px 50px
+}
+
 
