@@ -22,6 +22,17 @@ $(window).on('scroll', function() {
             }(i))
         }
   }
+  if($(window).scrollTop() >= 900) {  
+      $('#social h4').addClass('animated'); 
+        let list = $('.social-list li')
+        for (i = 0; i < list.length; i++) {
+            (function(i) {
+                setTimeout(function() { 
+                    list[i].setAttribute("style", "animation: slidedown 0.5s ease; visibility: visible");  
+                }, i*200)
+            }(i))
+        }
+  }
 })
 
  

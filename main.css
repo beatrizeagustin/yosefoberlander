@@ -326,7 +326,8 @@ ul {
 }
 
 .portfolio-skills span,
-.services-info h4 span {
+.services-info h4 span,
+.social-overlay h4 span {
     height: 20px;
     width: 10px;
     margin: 0 5px;
@@ -392,13 +393,13 @@ ul {
 }
 
 #social {
-    height: 20vh;
+    height: 70vh;
     background-image: url("assets/technology-1283624_1920.jpg");
-    background-size: 100%
+    background-size: cover
 }
 
 .social-overlay {
-    height: 20vh;
+    height: 70vh;
     width: 100%;
     position: absolute; 
 }
@@ -406,33 +407,48 @@ ul {
 .social-overlay:before {
     content: "";
     display: block;
-    height: 20vh;
+    height: 70vh;
     width: 100%;
     background: #0C1939;
     opacity: 0.7;
     position: absolute;
 }
 
-.social-links {
+ .social-links {
     width: 80vw;
-    margin: 50px auto;
-}
+    margin: 20px auto 0;
+    position: relative;
+} 
 
 .social-links li a {
     position: relative;
     color: #FFF;
 }
 
-.social-links i {
-}
-
 .social-links li {
-    margin: 20px;
+    font-size: 24px;
+    margin-right: 10px;
     display: inline;
 }
 
-.social-links .button {
-    padding: 20px 50px
+.social-list {
+    padding: 0;
+    text-align: center;
 }
 
+.author p {
+    color: #FFF;
+    text-align: center;
+    position: relative;  
+}
 
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px;
+    height: 10em;
+    background: #000;
+    color: lime;
+    font-size: 18px;
+} 
