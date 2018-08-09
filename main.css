@@ -45,6 +45,16 @@ ul {
     animation: type 1s steps(60, end);
 }
 
+.animated2 {
+    width: 30em;
+    animation: type2 1.5s steps(60, end);
+}
+
+.animated3 {
+    width: 30em;
+    animation: type3 2s steps(60, end);
+}
+
 #navbar {
     width: 80vw;
     margin: 0 auto;
@@ -115,7 +125,7 @@ ul {
 .heading {
     width: 80vw;
     margin: 100px auto 0;
-    height: 10vh;
+    height: ;
     color: lime;
     position: relative;
 }
@@ -302,16 +312,16 @@ ul {
 
 #portfolio {
     width: 100%;
-    height: 40vh;
+    height: 100vh;
     background-image: url("/assets/code-2620118_1920.jpg");
-    background-size: 100%;
+    background-size: cover;
     overflow: hidden; 
     position: relative
 }
 
 .portfolio-overlay {
     width: 100%;
-    height: 40vh;
+    height: 100vh;
     position: absolute;
 }
 
@@ -320,8 +330,8 @@ ul {
     display: block;
     background: #0C1939;
     width: 100%;
-    height: 40vh;
-    opacity: 0.5;
+    height: 100vh;
+    opacity: 0.7;
     position: absolute;
 }
 
@@ -367,7 +377,7 @@ ul {
 
 #services {
     width: 100%;
-    height: auto;
+    height: 100vh;
     background: #0C1939;
 }
 
@@ -402,32 +412,70 @@ ul {
 }
 
 #social {
-    height: 70vh;
+    height: 60vh;
     background-image: url("assets/technology-1283624_1920.jpg");
     background-size: cover
 }
 
 .social-overlay {
-    height: 70vh;
+    height: 60vh;
     width: 100%;
-    position: absolute; 
+    position: absolute;
 }
 
 .social-overlay:before {
     content: "";
     display: block;
-    height: 70vh;
+    height: 60vh;
     width: 100%;
     background: #0C1939;
-    opacity: 0.7;
+    opacity: 0.8;
     position: absolute;
 }
 
- .social-links {
+.social-heading {
     width: 80vw;
-    margin: 20px auto 0;
+    margin: 20px auto;
+}
+
+.social-heading {
     position: relative;
-} 
+}
+
+.social-heading .description {
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 20px 0;
+    font-family: 'Roboto Mono', monospace;
+    color: lime;
+}
+
+.social-heading .description:nth-child(2) {
+    margin: 50px 0 0;
+}
+
+.social-heading .description:nth-child(3) {
+    margin: 0;
+}
+
+.message-box {
+    position: relative;
+}
+
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 360px;
+    height: 10em;
+    background: #000;
+    border-color: #000;
+    color: lime;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+}
 
 .social-links li a {
     position: relative;
@@ -442,7 +490,20 @@ ul {
 
 .social-list {
     padding: 0;
+    margin: 50px;
     text-align: center;
+}
+
+.social-links {
+    width: 80vw;
+    margin: 20px auto 0;
+    position: relative;
+} 
+
+footer {
+    background: #111;
+    position: absolute;
+    width: 100%;
 }
 
 .author p {
@@ -450,16 +511,3 @@ ul {
     text-align: center;
     position: relative;  
 }
-
-textarea {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 360px;
-    height: 10em;
-    background: #000;
-    border-color: #000;
-    color: lime;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 14px;
-} 
