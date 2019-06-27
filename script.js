@@ -4,23 +4,23 @@ $(window).on('scroll', function() {
     $('#portfolio h4').addClass('animated');
         setTimeout(function() {
             $('.portfolio-skills li').addClass("slide");
-            $('.skill-list').removeClass("hidden")
-        }, 100)  
+            $('.skill-wrapper').removeClass("hidden")
+        }, 100)
     }
 
-  if($(window).scrollTop() >= 500) {  
+  if($(window).scrollTop() >= 500) {
       $('#services h4').addClass('animated');
       $('#portfolio span').removeClass('cursor')
         let list = $('.services-list li')
         for (i = 0; i < list.length; i++) {
             (function(i) {
-                setTimeout(function() { 
-                    list[i].setAttribute("style", "animation: slidedown 0.5s ease; visibility: visible");  
+                setTimeout(function() {
+                    list[i].setAttribute("style", "animation: slidedown 0.5s ease; visibility: visible");
                 }, i*200)
             }(i))
         }
   }
-  if($(window).scrollTop() >= 900) {  
+  if($(window).scrollTop() >= 900) {
       $('#social h4').addClass('animated');
       $('#services span').removeClass('cursor');
       $('#one').removeClass('hidden').addClass('animated2');
@@ -28,15 +28,10 @@ $(window).on('scroll', function() {
         let list = $('.social-list li')
         for (i = 0; i < list.length; i++) {
             (function(i) {
-                setTimeout(function() { 
+                setTimeout(function() {
                     list[i].setAttribute("style", "animation: slidedown 0.5s ease; visibility: visible");
                 }, i*200)
             }(i))
         }
   }
 })
-
- 
-
-
-
