@@ -424,7 +424,7 @@ ul {
 }
 
 #social {
-    height: 60vh;
+    height: 500px;
     background-image: url("assets/technology-1283624_1920.jpg");
     background-size: cover
 }
@@ -437,7 +437,7 @@ ul {
 }
 
 .social-overlay {
-    height: 60vh;
+    height: 500px;
     width: 100%;
     position: absolute;
 }
@@ -445,7 +445,7 @@ ul {
 .social-overlay:before {
     content: "";
     display: block;
-    height: 60vh;
+    height: 500px;
     width: 100%;
     background: #0C1939;
     opacity: 0.8;
