@@ -375,7 +375,7 @@ main {
 
 .skill-wrapper,
 .services-wrapper {
-    margin: 100px 0;
+    padding: 100px 0;
 }
 
 .portfolio-skills {
@@ -417,7 +417,7 @@ main {
 
 #services {
     width: 100%;
-    height: 500px;
+    height: 50vh;
     background: #0C1939;
 }
 
@@ -429,7 +429,7 @@ main {
 }
 
 .services-info li {
-    width: 20vw;
+    width: 300px;
     display: inline-block;
     color: #fff;
     text-align: center;
@@ -446,13 +446,20 @@ main {
     padding: 0;
 }
 
+.project-box {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #3d86f1;
+}
+
 .service-title {
     color: #eb963a;
     font-weight: bolder;
 }
 
 #social {
-    height: 500px;
+    height: 50vh;
+    margin: 50px 0;
 /*    background-image: url("assets/technology-1283624_1920.jpg"); */
     background-size: cover
 }
