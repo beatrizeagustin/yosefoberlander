@@ -69,6 +69,7 @@ main {
 }
 
 #navbar {
+    display: block;
     width: 80vw;
     height: 100%;
     margin: 0 auto;
@@ -303,11 +304,12 @@ main {
 }
 
 #about {
-    width: 80vw;
-    height: 50vh;
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 150px 0;
     color: #FFF;
   /*  background: #0C1939; */
-    margin: 50px auto;
     z-index: 1;
     overflow: hidden
 }
@@ -334,6 +336,7 @@ main {
   left: 5px;
   width: 210px;
   height: 210px;
+  background-color: #041e44;
   border: 1px solid #3d86f1;
   border-radius: 100%;
   z-index: -1
@@ -354,11 +357,9 @@ main {
 }
 
 #portfolio {
-    width: 100%;
-    height: 50vh;
-    margin: 50px 0;
-  /*  background-image: url("assets/code-2620118_1920.jpg"); */
-    background-size: cover;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 150px 0;
     overflow: hidden;
     position: relative
 }
@@ -391,7 +392,8 @@ main {
 
 .skill-wrapper,
 .services-wrapper {
-    padding: 100px 0;
+    padding: 50px 0;
+    max-width: 1000px
 }
 
 .portfolio-skills {
@@ -409,6 +411,7 @@ main {
 
 .skill-list,
 .skill-description {
+    max-width: 1000px;
     padding: 0;
     text-align: center;
 }
@@ -432,8 +435,9 @@ main {
 }
 
 #services {
-    width: 100%;
-    height: 50vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 150px 0;
     background: #0C1939;
 }
 
@@ -465,6 +469,7 @@ main {
 .project-box {
   width: 300px;
   height: 300px;
+  background-color: #041e44;
   border: 1px solid #3d86f1;
 }
 
@@ -473,9 +478,20 @@ main {
     font-weight: bolder;
 }
 
+.service-description {
+  font-size: 0.8em
+}
+
+.placeholder {
+  padding: 20px;
+  text-align: center;
+}
+
 #social {
-    height: 50vh;
-    margin: 50px 0;
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 150px 0;
 /*    background-image: url("assets/technology-1283624_1920.jpg"); */
     background-size: cover
 }
@@ -490,16 +506,6 @@ main {
 .social-overlay {
     height: 500px;
     width: 100%;
-    position: absolute;
-}
-
-.social-overlay:before {
-    content: "";
-    display: block;
-    height: 500px;
-    width: 100%;
-    background: #0C1939;
-    opacity: 1;
     position: absolute;
 }
 
@@ -540,7 +546,7 @@ textarea {
     margin-bottom: 20px;
     width: 450px;
     height: 200px;
-    background: #000;
+    background: #111;
     border-color: #000;
     color: lime;
     font-family: 'Roboto Mono', monospace;
@@ -566,8 +572,8 @@ textarea {
 }
 
 .social-links {
-    width: 80vw;
-    margin: 20px auto 0;
+    max-width: 1000px;
+    margin: 20px auto;
     position: relative;
 }
 
@@ -579,7 +585,7 @@ footer {
 }
 
 .author p {
-    color: #FFF;
+    color: #3d86f1;
     text-align: center;
     font-size: 14px;
 }

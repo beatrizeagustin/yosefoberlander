@@ -1,6 +1,6 @@
 /* SCROLL ANIMATION */
 $(window).on('scroll', function() {
-  if($(window).scrollTop() >= 500) {
+  if($(window).scrollTop() >= 900) {
     $('#portfolio h4').addClass('animated');
         setTimeout(function() {
             $('.portfolio-skills li').addClass("slide");
@@ -8,7 +8,7 @@ $(window).on('scroll', function() {
         }, 100)
     }
 
-  if($(window).scrollTop() >= 900) {
+  if($(window).scrollTop() >= 1500) {
       $('#services h4').addClass('animated');
       $('#portfolio span').removeClass('cursor')
         let list = $('.services-list li')
@@ -20,7 +20,7 @@ $(window).on('scroll', function() {
             }(i))
         }
   }
-  if($(window).scrollTop() >= 1300) {
+  if($(window).scrollTop() >= 2000) {
       $('#social h4').addClass('animated');
       $('#services span').removeClass('cursor');
       $('#one').removeClass('hidden').addClass('animated2');
