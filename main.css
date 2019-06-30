@@ -138,7 +138,6 @@ main {
 }
 
 .heading-wrapper {
-  width: 40em;
   max-width: 1000px;
   min-height: 100vh;
   margin: 0 auto;
@@ -447,7 +446,6 @@ main {
     max-width: 1000px;
     height: auto;
     margin: 0 auto;
-    padding: 20px 0;
 }
 
 .services-info li {
