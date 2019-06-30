@@ -306,7 +306,7 @@ main {
     width: 80vw;
     height: 50vh;
     color: #FFF;
-    background: #0C1939;
+  /*  background: #0C1939; */
     margin: 50px auto;
     z-index: 1;
     overflow: hidden
@@ -318,11 +318,25 @@ main {
 
 .description {
     height: auto;
+    position: relative;
 }
 
 .profile-image {
     float: left;
-    margin-right: 100px
+    margin-right: 100px;
+}
+
+.profile-image:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 210px;
+  height: 210px;
+  border: 1px solid #3d86f1;
+  border-radius: 100%;
+  z-index: -1
 }
 
 .yosef {
@@ -335,6 +349,8 @@ main {
 
 #about .button {
     font-size: 12px;
+    color: #3d86f1;
+    border: 1px solid #3d86f1;
 }
 
 #portfolio {
