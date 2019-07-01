@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 5em;
     margin: 0;
 }
 
@@ -47,7 +47,7 @@ ul {
 .yop-wrapper {
   position: relative;
   height: 100%;
-  margin: 0 30px;
+  margin: 0 100px;
 }
 
 main {
@@ -79,7 +79,7 @@ main {
 .navlist {
     width: 80vw;
     margin: 0;
-    padding: 0;
+    padding: 15px 0;
     font-family: 'Roboto Mono', monospace;
     text-align: right;
     position: absolute;
@@ -113,11 +113,15 @@ main {
 }
 
 #heading {
-    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
     height: 100vh;
-  /*  background-image: url("assets/notebook-1280538_1920.jpg"); */
-    background-size: cover;
-    background-position: right;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
     overflow: hidden;
 }
 
@@ -139,15 +143,11 @@ main {
 
 .heading-wrapper {
   max-width: 1000px;
-  min-height: 100vh;
   margin: 0 auto;
-  padding: 150px 0;
-
 }
 
 .heading {
     width: 80vw;
-    margin: 100px auto 0;
     color: lime;
     position: relative;
 }
@@ -157,14 +157,15 @@ main {
     font-family: 'Roboto Mono', monospace;
     overflow: hidden;
     white-space: nowrap;
-    width: 40em;
-    max-width: 40em;
+    width: 48em;
+    max-width: 48em;
     animation: type 1s steps(60, end);
     z-index: 2
 }
 
 .heading-name:nth-child(2) {
-    font-size: 24px;
+    font-size: 3em;
+    width: 12em;
     animation: type2 0.8s steps(60, end);
 }
 
@@ -307,11 +308,8 @@ main {
     display: block;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 150px 0;
     color: #FFF;
-  /*  background: #0C1939; */
     z-index: 1;
-    overflow: hidden
 }
 
 .about-description {
@@ -438,7 +436,6 @@ main {
 #services {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 150px 0;
     background: #0C1939;
 }
 
