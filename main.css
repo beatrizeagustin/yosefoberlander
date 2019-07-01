@@ -293,7 +293,7 @@ main {
     margin: 0;
     padding: 10px;
     border: 1px solid #FFF;
-    font-size: 12px;
+    font-size: 13px;
     color: #FFF;
     position: relative;
 }
@@ -350,6 +350,10 @@ main {
 }
 
 #about .button {
+    display: inline-block;
+    margin: 50px 0;
+    width: 200px;
+    text-align: center;
     font-size: 12px;
     color: #3d86f1;
     border: 1px solid #3d86f1;
@@ -536,6 +540,7 @@ main {
 
 .message-box {
     position: relative;
+    padding: 50px 0;
 }
 
 textarea {
