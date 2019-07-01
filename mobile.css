@@ -94,13 +94,20 @@
     max-width: 310px;
   }
 
+  #about .button {
+    display: block;
+    margin: 50px auto;
+  }
+
   .services-info li {
     padding: 20px 0;
   }
+
   .services-info li,
   .project-box {
     max-width: 275px
   }
+
 
   textarea {
     width: 100%;
