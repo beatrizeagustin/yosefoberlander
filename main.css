@@ -31,6 +31,12 @@ ul {
     list-style: none;
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .bold {
     font-weight: 800;
 }
