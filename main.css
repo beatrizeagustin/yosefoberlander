@@ -75,6 +75,10 @@ main {
     animation: type3 2s steps(60, end);
 }
 
+.mobile {
+  display: none;
+}
+
 #navbar {
     display: block;
     width: 80vw;
