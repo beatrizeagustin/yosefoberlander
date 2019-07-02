@@ -21,7 +21,12 @@
 
   .skill-list {
     display: flex;
+    justify-content: center;
+    font-size: 1em
+  }
 
+  .skill-description {
+    font-size: 15px
   }
 
 
@@ -52,6 +57,17 @@
   .heading-name:nth-child(2) {
     font-size: 2em;
   }
+
+  .skill-list {
+    display: flex;
+    justify-content: center;
+    font-size: 0.9em
+  }
+
+  .skill-description {
+    font-size: 12px
+  }
+
 
 }
 
