@@ -5,6 +5,7 @@ body {
     height: 100%;
     background: #0C1939;
     font-family: 'Raleway', sans-serif;
+    box-shadow: inset -2px -2px 90px -50px #3d86f1;
 }
 
 h1 {
@@ -426,7 +427,6 @@ main {
 .skill-description {
     max-width: 1000px;
     padding: 0;
-    text-align: center;
 }
 
 .skill-description {
@@ -487,7 +487,8 @@ main {
 }
 
 .project-box:hover,
-.button:hover {
+.button:hover,
+.button:active {
     -moz-box-shadow:  1px 1px 10px -3px #3d86f1;
     -webkit-box-shadow: 1px 1px 10px -3px #3d86f1;
     box-shadow: 1px 1px 10px -3px #3d86f1;
@@ -600,7 +601,7 @@ textarea {
 }
 
 footer {
-    background:  #0C1939;
+    background: transparent;
     position: absolute;
     bottom: 0;
     width: 100%;
