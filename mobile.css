@@ -103,6 +103,14 @@
     max-width: 310px;
   }
 
+  .heading-name h1 {
+    font-size: 1.5em
+  }
+
+  .heading-description {
+    font-size: 1em;
+  }
+
   #about .button {
     display: block;
     margin: 50px auto;
