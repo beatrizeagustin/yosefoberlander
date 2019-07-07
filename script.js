@@ -37,7 +37,7 @@ $(window).on('scroll', function() {
 })
 
 // test SCRIPTS for better scrolling and view
-/*
+
 function isScrolledIntoView(elem)
 {
     var docViewTop = $(window).scrollTop();
