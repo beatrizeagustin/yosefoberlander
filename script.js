@@ -37,7 +37,7 @@ $(window).on('scroll', function() {
 })
 
 // test SCRIPTS for better scrolling and view
-/*
+
 function isScrolledIntoView(elem)
 {
     var docViewTop = $(window).scrollTop();
@@ -47,7 +47,7 @@ function isScrolledIntoView(elem)
     var elemBottom = elemTop + $(elem).height();
 
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-} */
+}
 
 function Utils() {
 
@@ -69,7 +69,7 @@ Utils.prototype = {
     }
 };
 
-var Utils = new Utils(); 
+var Utils = new Utils();
 /*
 var isElementInView = Utils.isElementInView($('#flyout-left-container'), false);
 
