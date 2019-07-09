@@ -39,12 +39,17 @@ $(window).on('scroll', function() {
 // MOBILE NAV
 $(document).ready(function() {
     var $toggleButton = $('.mobile-btnOpen'),
-        $menuWrap = $('.menu-wrap');
+        $menuWrap = $('.menu-wrap'),
+        $link = $('.mobile-link');
 
     $toggleButton.on('click', function() {
         $(this).toggleClass('button-close');
         $menuWrap.toggleClass('open-menu');
     });
+
+    $link.on('click', function() {
+        $menuWrap.toggleClass('open-menu');
+    })
 });
 
 // test SCRIPTS for better scrolling and view
