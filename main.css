@@ -8,6 +8,10 @@ body {
   /*  box-shadow: inset -2px -2px 90px -50px #3d86f1; */
 }
 
+.mobile {
+  display: none;
+}
+
 h1 {
     font-size: 5em;
     margin: 0;

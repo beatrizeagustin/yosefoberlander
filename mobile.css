@@ -193,6 +193,10 @@
     margin: 50px auto;
   }
 
+  .portfolio-skills li {
+    margin: 5px;
+  }
+
   .services-info li {
     padding: 20px 0;
   }
