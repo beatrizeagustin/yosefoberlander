@@ -181,7 +181,7 @@
   }
 
   .heading-name h1 {
-    font-size: 1.5em
+    font-size: 1.8em
   }
 
   .heading-description {
@@ -197,6 +197,10 @@
     margin: 5px;
   }
 
+  .skill-list {
+    font-size: 0.9em
+  }
+
   .services-info li {
     padding: 20px 0;
   }
@@ -210,4 +214,15 @@
     width: 100%;
   }
 
+}
+
+@media only screen and (max-width : 320px) {
+  .yop-wrapper {
+    margin: 15px 0;
+  }
+
+  .mobile-btnOpen {
+    right: 15px;
+    top: 0;
+  }
 }

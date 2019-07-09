@@ -452,7 +452,8 @@ main {
 
 #services {
     max-width: 1000px;
-    margin: 75px auto;
+    margin: 0px auto;
+    padding: 75px 0;
     background: #0C1939;
 }
 
