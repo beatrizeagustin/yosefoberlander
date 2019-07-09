@@ -36,6 +36,17 @@ $(window).on('scroll', function() {
   }
 })
 
+// MOBILE NAV
+$(document).ready(function() {
+    var $toggleButton = $('.mobile-btnOpen'),
+        $menuWrap = $('.menu-wrap');
+
+    $toggleButton.on('click', function() {
+        $(this).toggleClass('button-close');
+        $menuWrap.toggleClass('open-menu');
+    });
+});
+
 // test SCRIPTS for better scrolling and view
 
 function isScrolledIntoView(elem)
