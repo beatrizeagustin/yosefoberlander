@@ -321,7 +321,7 @@ main {
 #about {
     display: block;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 75px auto;
     color: #FFF;
     z-index: 1;
 }
@@ -376,7 +376,7 @@ main {
 #portfolio {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 150px 0;
+    padding: 75px 0;
     overflow: hidden;
     position: relative
 }
@@ -452,7 +452,7 @@ main {
 
 #services {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 75px auto;
     background: #0C1939;
 }
 
@@ -516,7 +516,7 @@ main {
     display: block;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 150px 0;
+    padding: 75px 0;
 /*    background-image: url("assets/technology-1283624_1920.jpg"); */
     background-size: cover
 }
