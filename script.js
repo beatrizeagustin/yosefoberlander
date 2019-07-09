@@ -54,7 +54,7 @@ $(document).ready(function() {
 
 // test SCRIPTS for better scrolling and view
 
-function isScrolledIntoView(elem)
+/* function isScrolledIntoView(elem)
 {
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height();
@@ -86,7 +86,7 @@ Utils.prototype = {
 };
 
 var Utils = new Utils();
-/*
+
 var isElementInView = Utils.isElementInView($('#flyout-left-container'), false);
 
 if (isElementInView) {

@@ -83,13 +83,17 @@
   .heading-name:nth-child(2) {
     font-size: 1.2em;
   }
+
+  textarea {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width : 500px) {
 
 }
 
-@media only screen and (max-width : 415px) {
+@media only screen and (max-width : 485px) {
 /*  body {
     box-shadow: inset -2px -2px 65px -50px #3d86f1;
   } */
@@ -218,11 +222,15 @@
 
 @media only screen and (max-width : 320px) {
   .yop-wrapper {
-    margin: 15px 0;
+    margin: 0 15px
+  }
+
+  .heading-wrapper {
+    margin: 0;
   }
 
   .mobile-btnOpen {
-    right: 15px;
-    top: 0;
+    right: 0;
+    top: 15px;
   }
 }
